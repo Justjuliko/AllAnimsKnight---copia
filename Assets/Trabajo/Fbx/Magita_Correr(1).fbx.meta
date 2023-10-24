@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7e818228128e7f409c4995196178ba3
+guid: 78a4ae88ee8de79418d6193637e660d0
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -17,17 +17,9 @@ ModelImporter:
     removeConstantScaleCurves: 1
     motionNodeName: <Root Transform>
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
-      : position error = 13.777966 mm\n\t'mixamorig:RightUpLeg' : position error
-      = 28.234472 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Armature.001|Armature.001|mixamo.com|Layer0'
-      has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'mixamorig:Spine'
-      has translation animation that will be discarded.\n\t'mixamorig:LeftUpLeg'
-      has translation animation that will be discarded.\n\t'mixamorig:RightUpLeg'
-      has translation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -41,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: walkMaga
+      name: runMAGA
       takeName: Armature.001|Armature.001|mixamo.com|Layer0
       internalID: 2073693694548410006
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 41
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
