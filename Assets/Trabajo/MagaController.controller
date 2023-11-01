@@ -269,7 +269,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: runMAGA
-  m_Speed: 1
+  m_Speed: 1.7
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3458533564957254092}
@@ -628,7 +628,7 @@ AnimatorStateMachine:
     m_Position: {x: 500, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1295133358507275194}
-    m_Position: {x: 803.80426, y: 298.44977, z: 0}
+    m_Position: {x: 800, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8776397794743149465}
     m_Position: {x: 1080.7468, y: 121.20924, z: 0}
@@ -857,7 +857,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MagaRoll
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7972648414087028776}
