@@ -10,11 +10,6 @@ public class ChangeCharacter : MonoBehaviour
 
     int player = 1;
 
-    void Start()
-    {
-        Cursor.visible = false;
-    }
-
     void Update()
     {
         if(Input.GetKeyUp(KeyCode.K))
@@ -37,5 +32,9 @@ public class ChangeCharacter : MonoBehaviour
             Player2.SetActive(true);
             player = 0;
         }
+    }
+    public void HideCursor()
+    {
+        Cursor.visible = false;
     }
 }
