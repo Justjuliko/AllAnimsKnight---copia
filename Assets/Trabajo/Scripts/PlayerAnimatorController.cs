@@ -13,8 +13,6 @@ public class PlayerAnimatorController : MonoBehaviour
         Turn,
         Jump,
         Roll,
-        PushObj,
-        PushHeavyObj
     }
     private bool IsWalking()
     {
@@ -35,14 +33,6 @@ public class PlayerAnimatorController : MonoBehaviour
     private bool IsRolling()
     {
         return Input.GetKey(KeyCode.V);
-    }
-    private bool IsPushingObj()
-    {
-        return Input.GetKey(KeyCode.F);
-    }
-    private bool IsPushingHeavyObj()
-    {
-        return Input.GetKey(KeyCode.G);
     }
     public Animator _CharacterAnimator;
     private PlayerState _currentState;
@@ -76,10 +66,6 @@ public class PlayerAnimatorController : MonoBehaviour
                 _CharacterAnimator.SetBool("jump", false); break;
             case PlayerState.Roll:
                 _CharacterAnimator.SetBool("roll", false); break;
-            case PlayerState.PushObj:
-                _CharacterAnimator.SetBool("pushobj", false); break;
-            case PlayerState.PushHeavyObj:
-                _CharacterAnimator.SetBool("pushheavyobj", false); break;
         }
         switch (newState)
         {
@@ -97,10 +83,6 @@ public class PlayerAnimatorController : MonoBehaviour
                 _CharacterAnimator.SetBool("jump", true); break;
             case PlayerState.Roll:
                 _CharacterAnimator.SetBool("roll", true); break;
-            case PlayerState.PushObj:
-                _CharacterAnimator.SetBool("pushobj", true); break;
-            case PlayerState.PushHeavyObj:
-                _CharacterAnimator.SetBool("pushheavyobj", true); break;
         }
         _currentState = newState;
     }
@@ -129,14 +111,6 @@ public class PlayerAnimatorController : MonoBehaviour
         else if (IsRolling())
         {
             return PlayerState.Roll;
-        }
-        else if (IsPushingObj())
-        {
-            return PlayerState.PushObj;
-        }
-        else if (IsPushingHeavyObj())
-        {
-            return PlayerState.PushHeavyObj;
         }
         else
         {
