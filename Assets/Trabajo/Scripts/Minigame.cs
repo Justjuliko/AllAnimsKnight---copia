@@ -8,6 +8,7 @@ public class Minigame : MonoBehaviour
     public Animator _CharacterAnimatorMaga;
 
     public GameObject destroyableGameObject;
+    public GameObject winCanvas;
 
     [SerializeField] int counter = 0;
 
@@ -41,6 +42,8 @@ public class Minigame : MonoBehaviour
                 _CharacterAnimatorMago.SetBool("pushobj", true);
                 _CharacterAnimatorMaga.SetBool("pushobj", true);
                 destroyableGameObject.SetActive(false);
+                winCanvas.SetActive(true);
+                Cursor.visible = true;
             }
         }
         else if (interact == false)
